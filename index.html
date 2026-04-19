@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cannelle &amp; Safran – Restaurant</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ======= NAVIGATION ======= -->
+  <header id="header">
+    <nav class="navbar">
+      <a href="#accueil" class="logo">
+        <span class="logo-icon">&#10022;</span>
+        <span>Cannelle <em>&amp;</em> Safran</span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#a-propos">À propos</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#galerie">Galerie</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#reservation" class="btn-reserve">Réserver</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ======= HERO ======= -->
+  <section id="accueil" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-tagline">Cuisine orientale &amp; méditerranéenne</p>
+      <h1>Cannelle <span>&amp;</span> Safran</h1>
+      <p class="hero-subtitle">Un voyage des sens au cœur des épices du monde</p>
+      <div class="hero-actions">
+        <a href="#menu" class="btn btn-primary">Découvrir le menu</a>
+        <a href="#reservation" class="btn btn-outline">Réserver une table</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Défiler</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ======= BANDEAU HORAIRES ======= -->
+  <div class="info-bar">
+    <div class="info-bar-inner">
+      <div class="info-item">
+        <span class="info-icon">&#9679;</span>
+        <span>Lun – Ven : 12h – 14h30 &nbsp;|&nbsp; 19h – 22h30</span>
+      </div>
+      <div class="info-item">
+        <span class="info-icon">&#9679;</span>
+        <span>Sam – Dim : 12h – 15h &nbsp;|&nbsp; 19h – 23h</span>
+      </div>
+      <div class="info-item">
+        <span class="info-icon">&#9679;</span>
+        <span>Réservations : <a href="tel:+33123456789">01 23 45 67 89</a></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======= À PROPOS ======= -->
+  <section id="a-propos" class="section about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-images">
+          <div class="about-img about-img--main"></div>
+          <div class="about-img about-img--accent"></div>
+        </div>
+        <div class="about-text">
+          <p class="section-label">Notre histoire</p>
+          <h2 class="section-title">L'art des épices, <em>sublimé</em></h2>
+          <p>
+            Fondé en 2012 par la cheffe <strong>Yasmine Benali</strong>, Cannelle &amp; Safran est un restaurant
+            gastronomique qui célèbre les saveurs profondes de la cuisine orientale et méditerranéenne.
+          </p>
+          <p>
+            Ici, chaque assiette est une ode aux marchés d'Alger, de Marrakech et d'Istanbul.
+            La cannelle réchauffe, le safran illumine – ensemble ils racontent une histoire
+            de générosité et de partage.
+          </p>
+          <div class="about-values">
+            <div class="value-item">
+              <span class="value-num">12+</span>
+              <span class="value-label">Années d'expérience</span>
+            </div>
+            <div class="value-item">
+              <span class="value-num">40+</span>
+              <span class="value-label">Épices sélectionnées</span>
+            </div>
+            <div class="value-item">
+              <span class="value-num">★ 4.9</span>
+              <span class="value-label">Note clients</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= MENU ======= -->
+  <section id="menu" class="section menu-section">
+    <div class="container">
+      <p class="section-label">Notre carte</p>
+      <h2 class="section-title">Le Menu</h2>
+      <div class="menu-tabs">
+        <button class="tab active" data-tab="entrees">Entrées</button>
+        <button class="tab" data-tab="plats">Plats</button>
+        <button class="tab" data-tab="desserts">Desserts</button>
+        <button class="tab" data-tab="boissons">Boissons</button>
+      </div>
+
+      <!-- Entrées -->
+      <div class="menu-grid active" id="tab-entrees">
+        <div class="menu-card">
+          <div class="menu-card-header">
+            <h3>Briouats au fromage &amp; miel</h3>
+            <span class="menu-price">9 €</span>
+          </div>
+          <p>Feuilletés croustillants farcis de fromage frais, nappés de miel de thym et graines de sésame</p>
+          <span class="menu-tag">Végétarien</span>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-header">
+            <h3>Soupe harira</h3>
+            <span class="menu-price">8 €</span>
+          </div>
+          <p>Soupe traditionnelle de tomates, lentilles, pois chiches et herbes fraîches, relevée de gingembre et citron</p>
+          <span class="menu-tag">Vegan</span>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-header">
+            <h3>Houmous maison &amp; zaatar</h3>
+            <span class="menu-price">7 €</span>
+          </div>
+          <p>Houmous onctueux à l'huile d'olive, zaatar et paprika fumé, servi avec pain pita chaud</p>
+          <span class="menu-tag">Vegan</span>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-header">
+            <h3>Pastilla de volaille</h3>
+            <span class="menu-price">13 €</span>
+          </div>
+          <p>Tourte feuilletée à la volaille confite, amandes grillées, cannelle et sucre glace – une spécialité de la maison</p>
+          <span class="menu-tag">Spécialité</span>
+        </div>
+      </div>
+
+      <!-- Plats -->
+      <div class="menu-grid" id="tab-plats">
+        <div class="menu-card">
+          <div class="menu-card-header">
+            <h3>Tajine d'agneau aux pruneaux</h3>
+            <span class="menu-price">24 €</span>
+          </div>
+          <p>Agneau confit longuement mijoté aux épices ras-el-hanout, pruneaux et amandes dorées, couscous à la fleur d'oranger</p>
+          <span class="menu-tag">Spécialité</span>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-header">
+            <h3>Couscous royal</h3>
+            <span class="menu-price">26 €</span>
+          </div>
+          <p>Semoule fine, légumes de saison, merguez artisanales, poulet fermier et brochette d'agneau, bouillon parfumé</p>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-header">
+            <h3>Poulet chermoula &amp; safran</h3>
+            <span class="menu-price">22 €</span>
+          </div>
+          <p>Suprême de poulet fermier mariné à la chermoula, sauce au safran, riz basmati aux herbes et citron confit</p>
+          <span class="menu-tag">Coup de cœur</span>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-header">
+            <h3>Brochettes kefta &amp; légumes grillés</h3>
+            <span class="menu-price">20 €</span>
+          </div>
+          <p>Kefta de bœuf aux épices douces, légumes méditerranéens grillés, sauce yaourt à la menthe et pain maison</p>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-header">
+            <h3>Tajine végétarien aux sept légumes</h3>
+            <span class="menu-price">18 €</span>
+          </div>
+          <p>Légumes de saison confits, pois chiches, raisins secs et gingembre, sauce épicée au cumin et coriandre</p>
+          <span class="menu-tag">Vegan</span>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-header">
+            <h3>Daurade royale chermoula</h3>
+            <span class="menu-price">25 €</span>
+          </div>
+          <p>Daurade entière cuite au four en croûte d'herbes et épices, purée de pois chiches, huile au citron vert</p>
+        </div>
+      </div>
+
+      <!-- Desserts -->
+      <div class="menu-grid" id="tab-desserts">
+        <div class="menu-card">
+          <div class="menu-card-header">
+            <h3>Baklava maison</h3>
+            <span class="menu-price">7 €</span>
+          </div>
+          <p>Feuilles de filo, pistaches et noix, sirop de fleur d'oranger et miel de cédraie</p>
+          <span class="menu-tag">Spécialité</span>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-header">
+            <h3>Crème de safran &amp; cardamome</h3>
+            <span class="menu-price">8 €</span>
+          </div>
+          <p>Panna cotta légère infusée au safran et cardamome, coulis de rose et pistaches concassées</p>
+          <span class="menu-tag">Coup de cœur</span>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-header">
+            <h3>Chebakia &amp; glace miel</h3>
+            <span class="menu-price">8 €</span>
+          </div>
+          <p>Gâteaux sésame et miel traditionnels, glace artisanale au miel de thym, zeste d'orange</p>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-header">
+            <h3>Cornes de gazelle</h3>
+            <span class="menu-price">6 €</span>
+          </div>
+          <p>Petits gâteaux amande-cannelle façonnés à la main, eau de fleur d'oranger, sucre glace</p>
+          <span class="menu-tag">Végétarien</span>
+        </div>
+      </div>
+
+      <!-- Boissons -->
+      <div class="menu-grid" id="tab-boissons">
+        <div class="menu-card">
+          <div class="menu-card-header">
+            <h3>Thé à la menthe traditionnel</h3>
+            <span class="menu-price">4 €</span>
+          </div>
+          <p>Thé vert gunpowder, menthe fraîche, servi en théière avec pignons de pin</p>
+          <span class="menu-tag">Signature</span>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-header">
+            <h3>Jus de fruits frais maison</h3>
+            <span class="menu-price">5 €</span>
+          </div>
+          <p>Sélection du jour : mangue-gingembre, grenade-citron ou orange-cannelle</p>
+          <span class="menu-tag">Vegan</span>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-header">
+            <h3>Café turc</h3>
+            <span class="menu-price">3 €</span>
+          </div>
+          <p>Café moulu fin, préparé au cezve, servi avec lokum à la rose</p>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-header">
+            <h3>Sélection de vins</h3>
+            <span class="menu-price">à partir de 6 €</span>
+          </div>
+          <p>Vins méditerranéens soigneusement sélectionnés : Maroc, Tunisie, Liban, Languedoc</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= CITATION ======= -->
+  <section class="quote-section">
+    <div class="container">
+      <blockquote>
+        <p>« La cuisine est le plus ancien des arts et le premier des besoins. Ici, chaque épice est une mémoire, chaque plat une invitation au voyage. »</p>
+        <cite>— Yasmine Benali, Cheffe &amp; fondatrice</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- ======= GALERIE ======= -->
+  <section id="galerie" class="section galerie-section">
+    <div class="container">
+      <p class="section-label">Ambiance &amp; saveurs</p>
+      <h2 class="section-title">La Galerie</h2>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item gallery-item--tall" style="background-image:url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=80')"></div>
+      <div class="gallery-item" style="background-image:url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80')"></div>
+      <div class="gallery-item" style="background-image:url('https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=800&q=80')"></div>
+      <div class="gallery-item gallery-item--wide" style="background-image:url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80')"></div>
+      <div class="gallery-item" style="background-image:url('https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=800&q=80')"></div>
+    </div>
+  </section>
+
+  <!-- ======= RÉSERVATION ======= -->
+  <section id="reservation" class="section reservation-section">
+    <div class="container">
+      <div class="reservation-grid">
+        <div class="reservation-text">
+          <p class="section-label">Rejoignez-nous</p>
+          <h2 class="section-title">Réserver une <em>table</em></h2>
+          <p>Que ce soit pour un déjeuner en famille, un dîner romantique ou un événement d'entreprise, nous vous accueillons dans un cadre chaleureux et raffiné.</p>
+          <ul class="reservation-info">
+            <li>
+              <span class="info-label">Adresse</span>
+              <span>18 rue des Épices, 75003 Paris</span>
+            </li>
+            <li>
+              <span class="info-label">Téléphone</span>
+              <a href="tel:+33123456789">01 23 45 67 89</a>
+            </li>
+            <li>
+              <span class="info-label">Email</span>
+              <a href="mailto:contact@cannelle-safran.fr">contact@cannelle-safran.fr</a>
+            </li>
+          </ul>
+        </div>
+        <form class="reservation-form" id="reservationForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="prenom">Prénom</label>
+              <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required />
+            </div>
+            <div class="form-group">
+              <label for="nom">Nom</label>
+              <input type="text" id="nom" name="nom" placeholder="Votre nom" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="votre@email.fr" required />
+            </div>
+            <div class="form-group">
+              <label for="telephone">Téléphone</label>
+              <input type="tel" id="telephone" name="telephone" placeholder="06 00 00 00 00" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="date">Date</label>
+              <input type="date" id="date" name="date" required />
+            </div>
+            <div class="form-group">
+              <label for="heure">Heure</label>
+              <select id="heure" name="heure" required>
+                <option value="">Choisir l'heure</option>
+                <option value="12:00">12h00</option>
+                <option value="12:30">12h30</option>
+                <option value="13:00">13h00</option>
+                <option value="13:30">13h30</option>
+                <option value="19:00">19h00</option>
+                <option value="19:30">19h30</option>
+                <option value="20:00">20h00</option>
+                <option value="20:30">20h30</option>
+                <option value="21:00">21h00</option>
+                <option value="21:30">21h30</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="couverts">Nombre de couverts</label>
+            <select id="couverts" name="couverts" required>
+              <option value="">Nombre de personnes</option>
+              <option value="1">1 personne</option>
+              <option value="2">2 personnes</option>
+              <option value="3">3 personnes</option>
+              <option value="4">4 personnes</option>
+              <option value="5">5 personnes</option>
+              <option value="6">6 personnes</option>
+              <option value="7+">7 personnes et plus</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message (optionnel)</label>
+            <textarea id="message" name="message" rows="3" placeholder="Allergies, occasions spéciales..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Confirmer la réservation</button>
+          <div class="form-success" id="formSuccess">
+            Merci ! Votre réservation a bien été envoyée. Nous vous contacterons très vite.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= CONTACT / MAP ======= -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <p class="section-label">Nous trouver</p>
+      <h2 class="section-title">Accès &amp; Contact</h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-card">
+            <div class="contact-icon">&#128205;</div>
+            <h3>Adresse</h3>
+            <p>18 rue des Épices<br />75003 Paris, France</p>
+            <p class="contact-note">Métro : Arts et Métiers (ligne 3 &amp; 11)</p>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">&#128336;</div>
+            <h3>Horaires</h3>
+            <table class="hours-table">
+              <tr><td>Lundi – Vendredi</td><td>12h – 14h30 &amp; 19h – 22h30</td></tr>
+              <tr><td>Samedi – Dimanche</td><td>12h – 15h &amp; 19h – 23h</td></tr>
+              <tr class="closed"><td>Mardi soir</td><td>Fermé</td></tr>
+            </table>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">&#128241;</div>
+            <h3>Nous contacter</h3>
+            <p><a href="tel:+33123456789">01 23 45 67 89</a></p>
+            <p><a href="mailto:contact@cannelle-safran.fr">contact@cannelle-safran.fr</a></p>
+            <div class="social-links">
+              <a href="#" aria-label="Instagram" class="social-link">Instagram</a>
+              <a href="#" aria-label="Facebook" class="social-link">Facebook</a>
+            </div>
+          </div>
+        </div>
+        <div class="map-placeholder">
+          <div class="map-inner">
+            <div class="map-pin">&#128205;</div>
+            <p><strong>Cannelle &amp; Safran</strong></p>
+            <p>18 rue des Épices, Paris 3e</p>
+            <a href="https://www.google.com/maps/search/18+rue+des+Épices+75003+Paris" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Ouvrir dans Maps</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= FOOTER ======= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="logo-icon">&#10022;</span>
+          <h3>Cannelle &amp; Safran</h3>
+          <p>Cuisine orientale &amp; méditerranéenne<br />depuis 2012 à Paris.</p>
+        </div>
+        <div class="footer-nav">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#a-propos">À propos</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#galerie">Galerie</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p>18 rue des Épices, 75003 Paris</p>
+          <p><a href="tel:+33123456789">01 23 45 67 89</a></p>
+          <p><a href="mailto:contact@cannelle-safran.fr">contact@cannelle-safran.fr</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Cannelle &amp; Safran. Tous droits réservés.</p>
+        <p>Fait avec passion à Paris &#10022;</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
